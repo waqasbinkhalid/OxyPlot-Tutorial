@@ -26,7 +26,9 @@ namespace OxyPlot_Tutorial
         {
             InitializeComponent();
 
-            StackOverflow();
+            RunTime();
+
+            //StackOverflow();
 
             //TrigonometricPlotDemo();
 
@@ -77,6 +79,15 @@ namespace OxyPlot_Tutorial
         {
             StackOverflowView view = new StackOverflowView();
             StackOverflowViewModel viewModel = new StackOverflowViewModel();
+
+            view.DataContext = viewModel;
+            this.placeHolder.Content = view;
+        }
+
+        private void RunTime()
+        {
+            RunTimeView view = new RunTimeView();
+            RunTimeViewModel viewModel = new RunTimeViewModel();
 
             view.DataContext = viewModel;
             this.placeHolder.Content = view;

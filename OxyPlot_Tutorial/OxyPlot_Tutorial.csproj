@@ -65,6 +65,7 @@
     <Compile Include="ViewModel\OxyPlotDemoViewModel.cs" />
     <Compile Include="ViewModel\RealtimeDemoViewModel.cs" />
     <Compile Include="ViewModel\RefreshDemoViewModel.cs" />
+    <Compile Include="ViewModel\RunTimeViewModel.cs" />
     <Compile Include="ViewModel\StackOverflowViewModel.cs" />
     <Compile Include="ViewModel\TrigonometricPlotViewModel.cs" />
     <Compile Include="View\OxyPlotDemoView.xaml.cs">
@@ -75,6 +76,9 @@
     </Compile>
     <Compile Include="View\RefreshDemoView.xaml.cs">
       <DependentUpon>RefreshDemoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RunTimeView.xaml.cs">
+      <DependentUpon>RunTimeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\StackOverflowView.xaml.cs">
       <DependentUpon>StackOverflowView.xaml</DependentUpon>
@@ -103,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\RefreshDemoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RunTimeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
